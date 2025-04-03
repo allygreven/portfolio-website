@@ -4,17 +4,16 @@
   "description": "my portfolio website",
   "main": "index.js",
   "scripts": {
-  "db:import": "sh database/import.sh",
-  "dev:client": "npm run dev --prefix client",
-  "dev:server": "npm run dev --prefix server",
-  "dev": "npm-run-all --parallel --print-label dev:*",
-  "install:client": "npm install --prefix client",
-  "install:server": "npm install --prefix server",
-  "postinstall": "npm-run-all --parallel install:*",
-  "tsc:client": "tsc --project client",
-  "tsc:server": "tsc --project server",
-  "tsc": "npm-run-all --continue-on-error tsc:*"
-},
+    "db:import": "sh database/import.sh",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "npm run dev:client",
+    "install:client": "npm install --prefix client",
+    "install:server": "npm install --prefix server",
+    "postinstall": "npm-run-all --parallel install:*",
+    "tsc:client": "tsc --project client",
+    "tsc:server": "tsc --project server",
+    "tsc": "npm-run-all --continue-on-error tsc:*"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/allygreven/portfolio-website.git"
@@ -27,5 +26,8 @@
   "homepage": "https://github.com/allygreven/portfolio-website#readme",
   "devDependencies": {
     "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "react-icons": "^5.5.0"
   }
 }
