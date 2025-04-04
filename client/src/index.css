@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+    --font-heading: 'Antic Didone';
+    --font-body-reg: 'Bodoni Moda';
+
+    --font-clr-brn: #382212;
+    --font-clr-clk: #74442B;
+  
+    --color-background: #F4E9DC;
+    --color-contrast-bg: #E4DBCF;
+  }
