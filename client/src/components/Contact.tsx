@@ -4,9 +4,9 @@ import { FaGithub } from "react-icons/fa";
 
 export function Contact() {
   return (
-    <div>
-      <h1 className="font-heading text-3xl">/CONTACT</h1>
-      <div className="flex justify-center items-center p-8 gap-12 text-2xl">
+    <div className="h-132">
+      <h1 className="font-heading text-4xl p-6">/CONTACT</h1>
+      <div className="flex justify-center items-center p-8 gap-20 text-2xl">
       <a href="mailto:allysongreven@gmail.com">
         <MdOutlineAlternateEmail />
       </a>
